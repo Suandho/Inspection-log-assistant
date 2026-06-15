@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.alyac
+
+# Local LLM runtime binaries and model files
+tools/llama/bin/*
+!tools/llama/bin/README.md
+tools/llama/*.log
+models/*
+!models/README.md
+*.gguf

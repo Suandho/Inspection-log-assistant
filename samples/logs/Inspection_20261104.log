@@ -1,0 +1,5 @@
+2026-11-04 08:31:20 [Info] Recipe=MHBrakeDisk_Eonyang Inspection Start Requested
+2026-11-04 08:31:21 [Info] PLC_READY=True CAMERA_CONNECTED=True LIGHT_READY=True
+2026-11-04 08:31:22 [Warning] Inspection Start condition check: threshold=5 standard=10 measured=15
+2026-11-04 08:31:23 [Error] Start Rejected: measured value exceeded limit. threshold=5 standard=10 measured=15
+2026-11-04 08:31:24 [Info] Inspection Start Finished Result=Rejected

@@ -1,0 +1,282 @@
+﻿{
+  "logRootPath": "LLMTestLog",
+  "indexRootPath": "LLMIndex",
+  "useIndexFirst": true,
+  "eventKeywords": [
+    "Start",
+    "Inspection",
+    "검사",
+    "시작"
+  ],
+  "failureKeywords": [
+    "Error",
+    "Fail",
+    "Failed",
+    "Reject",
+    "Rejected",
+    "NG",
+    "Warning",
+    "Alarm",
+    "Exception",
+    "Timeout",
+    "NotReady",
+    "Not Ready",
+    "실패",
+    "거부",
+    "알람",
+    "오류",
+    "에러",
+    "타임아웃"
+  ],
+  "inspectionAliases": {
+    "WheelAssembly": [
+      "WheelAssembly"
+    ],
+    "PadOutboard": [
+      "PadOutboard",
+      "Outboard",
+      "Pad O/B",
+      "PadOB"
+    ],
+    "MaxDiameterVent": [
+      "MaxDiameterVent"
+    ],
+    "WheelOuterDiameter": [
+      "WheelOuterDiameter",
+      "OT",
+      "Ot",
+      "외경",
+      "Outer"
+    ],
+    "HubSurfaceDark": [
+      "HubSurfaceDark",
+      "Hub Dark"
+    ],
+    "HubSurfaceBright": [
+      "HubSurfaceBright",
+      "Hub Bright"
+    ],
+    "PadInboard": [
+      "PadInboard",
+      "Inboard",
+      "Pad I/B",
+      "PadIB"
+    ]
+  },
+  "recommendedActions": {
+    "LoadError": [
+      "프로그램 시작 시 장치 초기화 순서를 확인하세요.",
+      "해당 장치 전원, 케이블, 드라이버, SDK 연결 상태를 확인하세요.",
+      "동일 시각의 장치별 상세 로그와 Windows 장치 관리자 상태를 확인하세요."
+    ],
+    "IoError": [
+      "FnIO 모듈 연결 상태를 확인하세요.",
+      "출력 보드 전원과 통신 케이블 상태를 확인하세요.",
+      "동일 시간대 PLC/IO 통신 로그가 있는지 확인하세요."
+    ],
+    "InspectionCompleteFalse": [
+      "해당 검사 Area의 이미지, 조명, 제품 위치를 확인하세요.",
+      "Recipe와 검사 임계값 설정이 정상인지 확인하세요.",
+      "False가 특정 Grab Index에 집중되는지 확인하세요."
+    ],
+    "Timeout": [
+      "대기 중인 센서 또는 PLC 신호가 정상 전환되는지 확인하세요.",
+      "외부 장치 응답 시간과 통신 상태를 확인하세요."
+    ],
+    "Default": [
+      "원본 로그의 첫 발생 전후 10초 구간을 추가 확인하세요."
+    ]
+  },
+  "inspectionRules": {
+    "WheelOuterDiameter": {
+      "displayName": "외경 검사",
+      "failureMeaning": "외경 검사 결과가 NG로 판정되었습니다.",
+      "probableCauses": [
+        "제품 안착 위치가 기준 위치에서 벗어났을 수 있습니다.",
+        "외경 검사 Threshold 설정이 맞지 않을 수 있습니다.",
+        "조명 조건이 변경되었을 수 있습니다."
+      ],
+      "recommendedActions": [
+        "제품 안착 상태를 확인하세요.",
+        "외경 검사 Recipe 값을 확인하세요.",
+        "조명 밝기와 카메라 이미지를 확인하세요."
+      ]
+    }
+  },
+  "errorRules": {
+    "FnIO read output bit fail": {
+      "displayName": "IO 출력 비트 읽기 실패",
+      "impact": "기기 동작 정지 가능성이 높은 IO 통신 오류입니다.",
+      "probableCauses": [
+        "FnIO 모듈 통신 이상",
+        "출력 보드 전원 이상",
+        "PLC/IO 케이블 접촉 불량"
+      ],
+      "recommendedActions": [
+        "FnIO 모듈 전원 상태를 확인하세요.",
+        "PLC 통신 상태를 확인하세요.",
+        "IO 케이블 연결 상태를 확인하세요."
+      ]
+    },
+    "Load PLC Fail": {
+      "displayName": "PLC 로드 실패",
+      "impact": "PLC 상태 읽기 또는 로딩 시퀀스 실패 가능성이 있습니다.",
+      "probableCauses": [
+        "PLC 통신 이상",
+        "로딩 장치 상태 이상",
+        "PLC 응답 지연"
+      ],
+      "recommendedActions": [
+        "PLC 통신 상태를 확인하세요.",
+        "LoadingThread 전후 로그를 확인하세요.",
+        "로딩 장치 인터락 상태를 확인하세요."
+      ]
+    },
+    "Load CL Camera Fail": {
+      "displayName": "CL 카메라 로드 실패",
+      "impact": "프로그램 시작 중 Camera Link 카메라 초기화에 실패했습니다.",
+      "probableCauses": [
+        "CL 카메라 전원 또는 케이블 연결 이상",
+        "프레임그래버 드라이버 또는 SDK 초기화 실패",
+        "카메라가 다른 프로세스에서 점유 중"
+      ],
+      "recommendedActions": [
+        "CL 카메라 전원과 Camera Link 케이블을 확인하세요.",
+        "프레임그래버 드라이버와 카메라 SDK 로딩 상태를 확인하세요.",
+        "카메라 점유 프로세스가 있는지 확인한 뒤 프로그램을 재시작하세요."
+      ]
+    },
+    "Load Cam1 Fail": {
+      "displayName": "Cam1 로드 실패",
+      "impact": "프로그램 시작 중 Cam1 초기화에 실패했습니다.",
+      "probableCauses": [
+        "Cam1 전원 또는 통신 연결 이상",
+        "카메라 설정 파일 또는 Serial/IP 설정 불일치",
+        "카메라 드라이버 또는 SDK 초기화 실패"
+      ],
+      "recommendedActions": [
+        "Cam1 전원과 통신 케이블을 확인하세요.",
+        "Cam1 설정값과 실제 장치 연결 정보를 확인하세요.",
+        "카메라 드라이버와 SDK 로그를 확인하세요."
+      ]
+    },
+    "Load Cam2 Fail": {
+      "displayName": "Cam2 로드 실패",
+      "impact": "프로그램 시작 중 Cam2 초기화에 실패했습니다.",
+      "probableCauses": [
+        "Cam2 전원 또는 통신 연결 이상",
+        "카메라 설정 파일 또는 Serial/IP 설정 불일치",
+        "카메라 드라이버 또는 SDK 초기화 실패"
+      ],
+      "recommendedActions": [
+        "Cam2 전원과 통신 케이블을 확인하세요.",
+        "Cam2 설정값과 실제 장치 연결 정보를 확인하세요.",
+        "카메라 드라이버와 SDK 로그를 확인하세요."
+      ]
+    },
+    "Load Cam3 Fail": {
+      "displayName": "Cam3 로드 실패",
+      "impact": "프로그램 시작 중 Cam3 초기화에 실패했습니다.",
+      "probableCauses": [
+        "Cam3 전원 또는 통신 연결 이상",
+        "카메라 설정 파일 또는 Serial/IP 설정 불일치",
+        "카메라 드라이버 또는 SDK 초기화 실패"
+      ],
+      "recommendedActions": [
+        "Cam3 전원과 통신 케이블을 확인하세요.",
+        "Cam3 설정값과 실제 장치 연결 정보를 확인하세요.",
+        "카메라 드라이버와 SDK 로그를 확인하세요."
+      ]
+    },
+    "Load Cam4 Fail": {
+      "displayName": "Cam4 로드 실패",
+      "impact": "프로그램 시작 중 Cam4 초기화에 실패했습니다.",
+      "probableCauses": [
+        "Cam4 전원 또는 통신 연결 이상",
+        "카메라 설정 파일 또는 Serial/IP 설정 불일치",
+        "카메라 드라이버 또는 SDK 초기화 실패"
+      ],
+      "recommendedActions": [
+        "Cam4 전원과 통신 케이블을 확인하세요.",
+        "Cam4 설정값과 실제 장치 연결 정보를 확인하세요.",
+        "카메라 드라이버와 SDK 로그를 확인하세요."
+      ]
+    },
+    "Load IO Fail": {
+      "displayName": "IO 로드 실패",
+      "impact": "프로그램 시작 중 IO 모듈 초기화에 실패했습니다.",
+      "probableCauses": [
+        "IO 모듈 전원 이상",
+        "IO 통신 케이블 또는 포트 설정 이상",
+        "IO 드라이버 또는 장치 초기화 실패"
+      ],
+      "recommendedActions": [
+        "IO 모듈 전원과 통신 케이블을 확인하세요.",
+        "IO 포트 설정과 장치 번호를 확인하세요.",
+        "IO 드라이버 상태와 장치 초기화 로그를 확인하세요."
+      ]
+    }
+  },
+  "llm": {
+    "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
+    "model": "local-model",
+    "temperature": 0.1,
+    "maxTokens": 512,
+    "timeoutSeconds": 120
+  },
+  "eventPatterns": [
+    {
+      "type": "Error",
+      "regex": "Load\\s+Error:\\s*(?<message>Load\\s+[^!]+Fail)!?",
+      "module": "LoadingThread"
+    },
+    {
+      "type": "InspectionComplete",
+      "regex": "On\\s+(?<station>Station\\d+)\\s+InspectionComplete\\s*-\\s*(?<inspection>[^,]+),\\s*(?<result>True|False)",
+      "module": "InspectionProcessor"
+    },
+    {
+      "type": "ProcessStart",
+      "regex": "Process Start SN\\s*:\\s*(?<serialNumber>.*?),\\s*Area\\s*:\\s*(?<inspection>[^,]+),\\s*Grab Idx\\s*:\\s*(?<grabIndex>\\d+)",
+      "module": "InspectionProcessor"
+    },
+    {
+      "type": "IoError",
+      "module": "FnIO",
+      "contains": [
+        "FnIO Error"
+      ],
+      "messageAfter": "FnIO Error!:"
+    },
+    {
+      "type": "StationStart",
+      "regex": "(?<station>Station\\d+)\\s+Start\\s*-\\s*(?<serialNumber>.*?)(?:,|$)"
+    },
+    {
+      "type": "ResetStart",
+      "regex": "(?<station>Station\\d+)\\s+Reset\\s+Start"
+    },
+    {
+      "type": "ResetComplete",
+      "regex": "(?<station>Station\\d+)\\s+Reset\\s+Complete"
+    },
+    {
+      "type": "Timeout",
+      "contains": [
+        "Timeout"
+      ]
+    },
+    {
+      "type": "WaitSignal",
+      "contains": [
+        "Wait"
+      ]
+    },
+    {
+      "type": "Alarm",
+      "contains": [
+        "Alarm"
+      ]
+    }
+  ]
+}

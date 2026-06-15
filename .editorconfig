@@ -1,0 +1,16 @@
+﻿root = true
+
+[*]
+charset = utf-8-bom
+end_of_line = crlf
+insert_final_newline = true
+
+[*.{cs,json,md,csproj,sln}]
+indent_style = space
+
+[*.cs]
+indent_size = 4
+
+[*.json]
+indent_size = 2
+ 

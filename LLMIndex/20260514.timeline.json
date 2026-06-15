@@ -1,0 +1,434 @@
+﻿[
+  {
+    "Hour": "2026-05-14 00:00",
+    "ErrorCount": 158,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 300
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 300
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 299
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 150
+      },
+      {
+        "Message": "WheelOuterDiameter 검사 결과 False",
+        "Count": 150
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 01:00",
+    "ErrorCount": 162,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 290
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 290
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 281
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 146
+      },
+      {
+        "Message": "PadOutboard inspection completed with result True",
+        "Count": 145
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 02:00",
+    "ErrorCount": 198,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 365
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 365
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 361
+      },
+      {
+        "Message": "WheelOuterDiameter 검사 결과 False",
+        "Count": 184
+      },
+      {
+        "Message": "PadOutboard inspection completed with result True",
+        "Count": 183
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 03:00",
+    "ErrorCount": 350,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 268
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 268
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 268
+      },
+      {
+        "Message": "WheelOuterDiameter inspection completed with result True",
+        "Count": 135
+      },
+      {
+        "Message": "Process started: PadInboard",
+        "Count": 135
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 04:00",
+    "ErrorCount": 496,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 380
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 380
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 378
+      },
+      {
+        "Message": "FnIO read output bit fail!",
+        "Count": 199
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 190
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 05:00",
+    "ErrorCount": 153,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 290
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 290
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 287
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 145
+      },
+      {
+        "Message": "PadOutboard inspection completed with result True",
+        "Count": 145
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 06:00",
+    "ErrorCount": 170,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 340
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 340
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 340
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 170
+      },
+      {
+        "Message": "PadOutboard inspection completed with result True",
+        "Count": 170
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 07:00",
+    "ErrorCount": 194,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 380
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 380
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 378
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 191
+      },
+      {
+        "Message": "PadOutboard inspection completed with result True",
+        "Count": 190
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 08:00",
+    "ErrorCount": 72,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 140
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 140
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 139
+      },
+      {
+        "Message": "Process started: PadInboard",
+        "Count": 75
+      },
+      {
+        "Message": "PadInboard inspection completed with result True",
+        "Count": 75
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 09:00",
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 340
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 340
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 340
+      },
+      {
+        "Message": "WheelOuterDiameter inspection completed with result True",
+        "Count": 340
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 170
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 10:00",
+    "ErrorCount": 3,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 420
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 420
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 420
+      },
+      {
+        "Message": "WheelOuterDiameter inspection completed with result True",
+        "Count": 420
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 210
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 11:00",
+    "ErrorCount": 4,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 510
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 510
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 510
+      },
+      {
+        "Message": "WheelOuterDiameter inspection completed with result True",
+        "Count": 510
+      },
+      {
+        "Message": "Process started: PadInboard",
+        "Count": 255
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 12:00",
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: PadInboard",
+        "Count": 5
+      },
+      {
+        "Message": "PadInboard inspection completed with result True",
+        "Count": 5
+      },
+      {
+        "Message": "Process started: HubSurfaceDark",
+        "Count": 1
+      },
+      {
+        "Message": "HubSurfaceDark inspection completed with result True",
+        "Count": 1
+      },
+      {
+        "Message": "Process started: HubSurfaceBright",
+        "Count": 1
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 13:00",
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 490
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 490
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 490
+      },
+      {
+        "Message": "WheelOuterDiameter inspection completed with result True",
+        "Count": 490
+      },
+      {
+        "Message": "Process started: PadOutboard",
+        "Count": 245
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 14:00",
+    "ErrorCount": 424,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "FnIO read output bit fail!",
+        "Count": 199
+      },
+      {
+        "Message": "FnIO write output bit fail!",
+        "Count": 2
+      },
+      {
+        "Message": "Load PLC Fail",
+        "Count": 2
+      },
+      {
+        "Message": "26-05-14_14:05:15:712 [INF] <LoadingThread> Log Load Complete",
+        "Count": 1
+      },
+      {
+        "Message": "26-05-14_14:05:16:026 [INF] <LoadingThread> Setting Load Complete",
+        "Count": 1
+      }
+    ]
+  },
+  {
+    "Hour": "2026-05-14 15:00",
+    "ErrorCount": 99,
+    "WarningCount": 0,
+    "TopEvents": [
+      {
+        "Message": "Process started: PadInboard",
+        "Count": 10
+      },
+      {
+        "Message": "PadInboard inspection completed with result True",
+        "Count": 10
+      },
+      {
+        "Message": "Process started: MaxDiameterVent",
+        "Count": 10
+      },
+      {
+        "Message": "MaxDiameterVent inspection completed with result True",
+        "Count": 10
+      },
+      {
+        "Message": "Process started: WheelOuterDiameter",
+        "Count": 10
+      }
+    ]
+  }
+]
